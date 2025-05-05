@@ -1,0 +1,310 @@
+{
+	"info": {
+		"_postman_id": "YOUR_POSTMAN_ID",
+		"name": "SembakoAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Barang",
+			"item": [
+				{
+					"name": "Get All Barang",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/Barang",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"Barang"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Barang By ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/Barang/1",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"Barang",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Barang",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nama\": \"Produk Baru\",\n    \"harga\": 25000,\n    \"stok\": 100\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/Barang",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"Barang"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Barang",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 1,\n    \"nama\": \"Beras Premium Update\",\n    \"harga\": 70000,\n    \"stok\": 90\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/Barang/1",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"Barang",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Barang",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/Barang/1",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"Barang",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Pelanggan",
+			"item": [
+				{
+					"name": "Get All Pelanggan",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/Pelanggan",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"Pelanggan"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Pelanggan By ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/Pelanggan/1",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"Pelanggan",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Pelanggan",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nama\": \"Pelanggan Baru\",\n    \"alamat\": \"Alamat Pelanggan Baru\"\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/Pelanggan",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"Pelanggan"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Pelanggan",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 1,\n    \"nama\": \"Toko Jaya Update\",\n    \"alamat\": \"Alamat Toko Jaya Update\"\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/Pelanggan/1",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"Pelanggan",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Pelanggan",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/Pelanggan/1",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"Pelanggan",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Transaksi",
+			"item": [
+				{
+					"name": "Create Transaksi",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"pelangganId\": 1,\n    \"transaksiDetails\": [\n        {\n            \"barangId\": 1,\n            \"kuantitas\": 2\n        },\n        {\n            \"barangId\": 3,\n            \"kuantitas\": 1\n        }\n    ]\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/Transaksi",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"Transaksi"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Transaksi By ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/Transaksi/1",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"Transaksi",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "http://localhost:5181",
+			"type": "string",
+			"description": "Base URL of the Sembako API. Replace YOUR_PORT_NUMBER with the actual port your API is running on."
+		}
+	]
+}

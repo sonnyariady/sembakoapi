@@ -1,0 +1,6 @@
+@SembakoAPI_HostAddress = http://localhost:5181
+
+GET {{SembakoAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
